@@ -1,0 +1,17 @@
+{
+  "id": "INC-0003",
+  "title": "변경 전 정산 주기를 현재 정책처럼 안내",
+  "created": "2026-10-02",
+  "updated": "2026-10-02",
+  "category": "outdated-info",
+  "severity": "high",
+  "status": "open",
+  "model": "company-llm-v2",
+  "symptom": "정산 문의 답변에서 '입금은 D+2'라고 안내했으나 10월부터 D+3으로 변경됨.",
+  "root_cause": "조사 중. 인수인계 문서의 현재 상황 파일이 9월 기준으로 갱신되지 않은 것으로 추정.",
+  "bad_prompt": "정산은 언제 되나요? 라는 고객 문의에 답해 줘.",
+  "fixed_prompt": "",
+  "mitigation": "",
+  "tags": ["정산", "낡은정보", "인수인계"],
+  "reporter": "고객지원팀"
+}
