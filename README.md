@@ -1,5 +1,7 @@
 # PromptSolution
 
+> 저장소 이름: AIIncidentKnowledgeBase · 프로젝트 이름: PromptSolution
+
 **기업용 AI의 오류를 기록·분류하고, 원인과 수정된 프롬프트, 대응 방법을 팀원과 공유하는 솔루션.**
 
 *Record, classify and share enterprise-AI failures: what went wrong, why, the fixed prompt, and how to mitigate it.*
