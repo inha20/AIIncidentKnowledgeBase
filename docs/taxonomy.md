@@ -8,7 +8,7 @@
 | hallucination | 근거 없는 사실·수치·출처 생성 | "근거 없으면 모른다고 답" 규칙, 근거 인용 요구, 문서 제공 |
 | instruction-ignored | 명시한 지시·제약 무시 | 지시 위치/우선순위 조정, 제약을 짧은 체크리스트로 분리 |
 | format-violation | 요구한 출력 형식을 어김 | 예시 출력 제공, 스키마 명시, 후처리 검증 |
-| context-missing | 필요한 맥락 부재로 오답 | 업무 맥락 제공(예: [CompanyToAI](../../CompanyToAI) 인수인계 폴더) |
+| context-missing | 필요한 맥락 부재로 오답 | 업무 맥락 제공(예: [CompanyToAI](https://github.com/inha20/CompanyContextHandoverKit) 인수인계 폴더) |
 | outdated-info | 낡은 정보를 현재처럼 말함 | 기준일 명시, 맥락 문서 갱신 주기 설정 |
 | over-refusal | 정상 업무를 불필요하게 거절 | 업무 목적·권한 맥락 명시, 거절 기준 구체화 |
 | unsafe-output | 개인정보·기밀·부적절 내용 출력 | 입력 마스킹, 출력 필터, 사람 검수 |
@@ -30,3 +30,8 @@
 ## 분류 팁
 - 원인이 둘 이상이면 **가장 먼저 고칠 수 있는 것**을 category 로, 나머지는 tags 로 적습니다.
 - 분류가 애매하면 `root_cause` 에 근거를 쓰고, 월간 리뷰에서 체계를 조정합니다.
+
+## 이 분류의 한계 (2026-11-08 추가, AI 초안이며 사람 검토 전)
+- 분류는 설계자의 판단이며 실제 오류 기록이나 문헌과 대조하지 않았습니다. 10종이 서로 겹치지 않고 빠짐이 없다는 근거가 없습니다.
+- 겹침의 예: 근거 문서를 주지 않아 생긴 환각은 hallucination 으로도 context-missing 으로도 읽을 수 있습니다. 위 '분류 팁'은 가장 먼저 고칠 수 있는 것을 고르라고 하는데, 두 분류의 '흔한 수정 방향'에 모두 문서(맥락) 제공이 들어 있습니다. 예시 [INC-0001](../examples/incidents/INC-0001.json)이 이런 경우입니다.
+- 회사 인수인계 키트(CompanyToAI)의 평가 지표와의 연결 후보는 [진행 기록](00-progress-log.md)에 있습니다.
